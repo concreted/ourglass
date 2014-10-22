@@ -28,9 +28,11 @@ Spout.prototype = {
   },
 
   emit: function() {
-    console.log(this.c);
     var particles = this.c.entities.all(Particle);
-    console.log(particles);
+    console.log(particles.length);
+    if (particles.length < 4) {
+      this.c.entities.create(Particle, { center: {x: this.center.x, y: this.center.y + this.size.y + 1}});
+    }
   }
 
 };

@@ -11,7 +11,7 @@ var SimpleGame = function(autoFocus, playerName, roomName) {
 
   this.c.entities.create(GoalBucket, { center: { x:300, y:490 } });
 
-  this.c.entities.create(Spout, { center: { x:10, y:300 } });
+  this.c.entities.create(Spout, { center: { x:100, y:10 } });
 
   // all entities on the board can be accessed by calling:
     // this.c.entities.all()
